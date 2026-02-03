@@ -12,6 +12,7 @@ from config.postgres_config import (
     POSTGRES_PASSWORD,
 )
 
+
 # ---------------------------
 # Spark Session
 # ---------------------------

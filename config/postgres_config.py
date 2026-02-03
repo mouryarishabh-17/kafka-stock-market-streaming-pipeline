@@ -1,4 +1,3 @@
-# config/postgres_config.py
 import os
 from dotenv import load_dotenv
 

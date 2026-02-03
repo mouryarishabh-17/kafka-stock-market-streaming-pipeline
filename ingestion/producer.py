@@ -6,7 +6,6 @@ from kafka import KafkaProducer
 
 from config.kafka_config import BOOTSTRAP_SERVERS, TOPIC_NAME
 
-
 DATA_DIR = os.path.join("ingestion", "data")
 
 

@@ -7,6 +7,7 @@ from config.postgres_config import (
     POSTGRES_PASSWORD
 )
 
+
 def run_query(sql: str):
     conn = psycopg2.connect(
         host=POSTGRES_HOST,

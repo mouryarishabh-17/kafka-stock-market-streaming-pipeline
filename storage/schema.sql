@@ -1,3 +1,4 @@
+
 CREATE TABLE IF NOT EXISTS stock_prices (
     id SERIAL PRIMARY KEY,
     symbol VARCHAR(10),

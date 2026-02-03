@@ -1,56 +1,64 @@
-# Python Standard
+# ===============================
+# Python
+# ===============================
 __pycache__/
 *.py[cod]
-*$py.class
 *.so
 .env
-.venv
-env/
+.venv/
 venv/
-ENV/
+env/
 
-# Distribution / Packaging
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+# ===============================
+# Virtual Environments & Binaries
+# ===============================
+python/
+python3/
+pip/
+pip3/
 
-# Spark & Java
+# ===============================
+# Spark / Hadoop
+# ===============================
 spark-warehouse/
 metastore_db/
 derby.log
 checkpoint/
 checkpoints/
+tmp/
+spark-checkpoints/
 
-# IDE / Editor
-.idea/
+# ===============================
+# Kafka / Zookeeper
+# ===============================
+kafka-logs/
+zookeeper-data/
+
+# ===============================
+# Logs
+# ===============================
+*.log
+logs/
+
+# ===============================
+# IDE / OS
+# ===============================
 .vscode/
+.idea/
 *.swp
 *.swo
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-logs/
+# ===============================
+# Build / Packaging
+# ===============================
+build/
+dist/
+*.egg-info/
+.eggs/
 
-# Kafka
-kafka-logs/
-zookeeper-data/
-
-# Extra safety
-**/__pycache__/
-
-# Optional: Ignore large data if you add more later
+# ===============================
+# Raw Data (Kaggle CSVs)
+# ===============================
 # ingestion/data/*.csv
