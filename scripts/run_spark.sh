@@ -1,7 +1,8 @@
 #!/bin/bash
+set -e
 
-SPARK_HOME=/home/ubuntu/spark-3.5.1-bin-hadoop3
-PROJECT_ROOT=/home/ubuntu/market-data-pipeline
+SPARK_HOME=${SPARK_HOME:-/opt/spark}
+PROJECT_ROOT=$(pwd)
 
 echo "Submitting Spark Structured Streaming Job..."
 

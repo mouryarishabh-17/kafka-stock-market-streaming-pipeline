@@ -1,12 +1,16 @@
+import os
 import psycopg2
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def run_query(sql: str):
     conn = psycopg2.connect(
-        dbname="market_data",
-        user="spark_user",
-        password="spark_pass",
-        host="127.0.0.1",   # MUST be 127.0.0.1
-        port="5432"
+        dbname=os.getenv("POSTGRES_DB"),
+        user=os.getenv("POSTGRES_USER"),
+        password=os.getenv("POSTGRES_PASSWORD"),
+        host=os.getenv("POSTGRES_HOST", "127.0.0.1"),
+        port=os.getenv("POSTGRES_PORT", "5432")
     )
 
     cur = conn.cursor()
